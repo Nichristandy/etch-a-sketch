@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid; /* Use grid instead of flex */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(0, 1fr)
+  ); /* Makes the grid auto-fill */
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.grid {
+  border: 1px solid lightgray;
+  width: 100%; /* Ensure it takes the full width */
+  height: 100%; /* Ensure it takes the full height */
+  background-color: white;
+}
